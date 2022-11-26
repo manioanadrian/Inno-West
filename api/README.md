@@ -14,6 +14,12 @@
 
 ## Requirements
 
+Broker requires Crat database, thus install the following docker image:
+
+
+.net 5 Framework
+
+
 ## Installation
 ### API
 
