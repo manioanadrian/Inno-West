@@ -9,12 +9,13 @@ This project is part of [DIH^2](http://www.dih-squared.eu/). For more informatio
 -   [Requirements](#requirements)
 -   [Install](#install)
 -   [Usage](#usage)
--   [API](#api))
+-   [API](#api)
 -   [License](#license)
 
 ## Background
 
 ## Requirements
+
 Broker requires Crate database, thus install the following [docker](/docker/) image and also [.net5](https://dotnet.microsoft.com/en-us/download/dotnet/5.0) framework or newer.
 
 
