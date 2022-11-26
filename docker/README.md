@@ -22,16 +22,20 @@ Requires [docker](https://github.com/docker) preinstalled.
 ## Installation
 
 [Orion Context Broker](https://github.com/telefonicaid/fiware-orion/tree/master/docker)
-To do this run this command
 
-.. code-block:: console
+To install run this command
+
+```text
 sudo docker run -d --name orion1 -p 1026:1026 fiware/orion
+```
 
 [CrateDB](https://github.com/crate/crate)
-To do this run this command
 
-.. code-block:: console
+To install run this command
+
+```text
 sh$ docker run --publish 4200:4200 --publish 5432:5432 crate -Cdiscovery.type=single-node
+```
 
 ## License
 The INNO WEST ROSE-AP components are licensed under [Apache 2.0](/LICENSE) © 2022 INNO ROBOTICS S.R.L.
