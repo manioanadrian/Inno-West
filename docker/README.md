@@ -2,26 +2,36 @@
  ROSE-AP automated planning
 
 # Docker Image
-This project is part of [DIH^2](http://www.dih-squared.eu/). For more information check the RAMP Catalogue entry for the [components](https://github.com/xxx).
+This project is part of [DIH2](http://www.dih-squared.eu/). For more information check the RAMP Catalogue entry for the [components](https://github.com/xxx).
  ## Contents
 
 -   [Background](#background)
 -   [Requirements](#requirements)
 -   [Install](#install)
 -   [Usage](#usage)
--   [API](#api)
 -   [License](#license)
 
 ## Background
 
+CrateDB is utilized for data collection.
+
 ## Requirements
 
-Broker requires Crate database, thus install the following [docker](/docker/) image and also [.net5](https://dotnet.microsoft.com/en-us/download/dotnet/5.0) framework or newer.
-
+Requires [docker](https://github.com/docker) preinstalled.
 
 ## Installation
 
-### API
+[Orion Context Broker](https://github.com/telefonicaid/fiware-orion/tree/master/docker)
+To do this run this command
+
+.. code-block:: console
+sudo docker run -d --name orion1 -p 1026:1026 fiware/orion
+
+[CrateDB](https://github.com/crate/crate)
+To do this run this command
+
+.. code-block:: console
+sh$ docker run --publish 4200:4200 --publish 5432:5432 crate -Cdiscovery.type=single-node
 
 ## License
 The INNO WEST ROSE-AP components are licensed under [Apache 2.0](/LICENSE) © 2022 INNO ROBOTICS S.R.L.

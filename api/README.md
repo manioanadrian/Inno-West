@@ -1,27 +1,24 @@
 # Inno Broker v2.2
- Inno Broker API
- This project is part of [DIH^2](http://www.dih-squared.eu/). For more information check the RAMP Catalogue entry for the [components](https://github.com/xxx).
+This project is part of [DIH2](http://www.dih-squared.eu/). For more information check the RAMP Catalogue entry for the [components](https://github.com/xxx).
  ## Contents
 
 -   [Background](#background)
 -   [Requirements](#requirements)
 -   [Install](#install)
 -   [Usage](#usage)
--   [API](#api))
+-   [API](#api)
 -   [License](#license)
 
 ## Background
 
 ## Requirements
 
-Broker requires Crat database, thus install the following docker image:
-
-
-.net 5 Framework
+Broker requires Crate database, thus install the following [docker](/docker/) image and also [.net5](https://dotnet.microsoft.com/en-us/download/dotnet/5.0) framework or newer.
 
 
 ## Installation
+
 ### API
 
-##License
+## License
 The INNO WEST ROSE-AP components are licensed under [Apache 2.0](/LICENSE) © 2022 INNO ROBOTICS S.R.L.
