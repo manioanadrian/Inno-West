@@ -26,7 +26,7 @@ Requires [docker](https://github.com/docker) preinstalled.
 To install run this command
 
 ```text
-sudo docker run -d --name orion1 -p 1026:1026 fiware/orion
+docker run -d --name orion1 -p 1026:1026 fiware/orion
 ```
 
 [CrateDB](https://github.com/crate/crate)
@@ -34,7 +34,14 @@ sudo docker run -d --name orion1 -p 1026:1026 fiware/orion
 To install run this command
 
 ```text
-sh$ docker run --publish 4200:4200 --publish 5432:5432 crate -Cdiscovery.type=single-node
+docker run --publish 4200:4200 --publish 5432:5432 crate -Cdiscovery.type=single-node
+```
+
+## Usage
+
+To access the interface of CrateDB and see if all is running try the following:
+```text
+http://localhost:4200/
 ```
 
 ## License
