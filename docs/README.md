@@ -30,7 +30,7 @@ Part Table: Is the table from the CrateDB where the parts data will be stored.
 
 ## Usage
 
-<img width="1000" alt="interface" src="img/interface.png">
+<img width="500" alt="interface" src="img/interface.png">
 
 When all steps of the Broker and databse configration are done the broker can be started.
 First Step is to Connect, by this we establish a connection with the PLC. If not succesfull an error will be thrown in the logfile.
