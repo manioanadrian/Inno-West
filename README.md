@@ -20,7 +20,7 @@ The main service contributed by the ROSE-AP is automated planning, to minimize t
 -	Product Tracking - manage the production process in real time
 -	Performance Analysis – using collected data a real time performance analysis helps improving the OEE KPIs
 
-<img width="1000" alt="OEE" src="docs/img/oee-breakdown-image.png">
+<img width="500" alt="OEE" src="docs/img/oee-breakdown-image.png">
 
 ## Architecture
 
