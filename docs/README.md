@@ -19,12 +19,12 @@ All configrations are done in the settings page of the broker.
 
 <img width="200" alt="settings" src="img/settings.png">
 
-PLC Ip: is the IP of the programable controller which drives the robot cell and gathers the data.
-Server Ip: is the IP of the docker image with the Crate data base.
-User: Username to access the db.
-Pw: Password to access the db.
-Production Table: Is the table from the CrateDB where the production data will be stored.
-Part Table: Is the table from the CrateDB where the parts data will be stored.
+1. PLC Ip: is the IP of the programable controller which drives the robot cell and gathers the data.
+2. Server Ip: is the IP of the docker image with the Crate data base.
+3. User: Username to access the db.
+4. Pw: Password to access the db.
+5. Production Table: Is the table from the CrateDB where the production data will be stored.
+6. Part Table: Is the table from the CrateDB where the parts data will be stored.
 
 *Optional it can be added to run automaticaly at startup. 
 

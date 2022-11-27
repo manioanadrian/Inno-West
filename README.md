@@ -20,6 +20,7 @@ The main service contributed by the ROSE-AP is automated planning, to minimize t
 -	Product Tracking - manage the production process in real time
 -	Performance Analysis – using collected data a real time performance analysis helps improving the OEE KPIs
 
+<img width="1000" alt="OEE" src="docs/img/oee-breakdown-image.png">
 
 ## Architecture
 
@@ -29,9 +30,9 @@ The main service contributed by the ROSE-AP is automated planning, to minimize t
 ## Requirements
 
 The following are required in order to utilize the product:
-- Docker image installed with Orion and CrateDB
+- Docker installed with [RAMP IoT](https://github.com/karikolehmainen/RAMP-IoT/tree/c05fac70e8478554a93a9bbe4470516106c92166) Plarform is FIWARE-based package
 - Running instance of the API Inno Broker
-- Welding / Polish Robot cell
+- Welding and Polish Robot cell
 
 ## Instalation
 

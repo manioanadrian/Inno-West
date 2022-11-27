@@ -6,7 +6,6 @@ This project is part of [DIH2](http://www.dih-squared.eu/). For more information
 -   [Requirements](#requirements)
 -   [Install](#install)
 -   [Usage](#usage)
--   [API](#api)
 -   [License](#license)
 
 ## Background
@@ -18,7 +17,7 @@ Proposed solution allows access to additional production line performance data i
 3. Data Collection – Automatic data collection which will be used for a concise evaluation of the entire process
 4. Performance Analysis – using collected data a real time performance analysis helps improving the OEE KPIs
 
-In order to achive this the broker was required to facilitate the exchange of data between the PLC, cratedb and Orion Fiware.
+In order to achive this the broker was required to facilitate the exchange of data between the PLC, cratedb and fiware.
 
 ## Requirements
 
