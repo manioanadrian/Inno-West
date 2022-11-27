@@ -30,7 +30,7 @@ There is no instalation required, the software is a standalone that can be start
 
 ## Usage
 
-Details on how to use the software are described under docs in the [Programmers Manual](/docs/programmers_manual.md)
+Details on how to use the software are described under docs in the [Programmers Manual](/docs/readme.md)
 
 ### API
 

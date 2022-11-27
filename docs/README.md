@@ -17,7 +17,7 @@ In order to utilize the product [.net5](https://dotnet.microsoft.com/en-us/downl
 
 All configrations are done in the settings page of the broker.
 
-<img width="200" alt="settings" src="docs/img/settings.png">
+<img width="200" alt="settings" src="docs/img/ettings.png">
 
 PLC Ip: is the IP of the programable controller which drives the robot cell and gathers the data.
 Server Ip: is the IP of the docker image with the Crate data base.
@@ -30,7 +30,7 @@ Part Table: Is the table from the CrateDB where the parts data will be stored.
 
 ## Usage
 
-<img width="500" alt="interface" src="docs/img/interface.png">
+<img width="1000" alt="interface" src="docs/img/interface.png">
 
 When all steps of the Broker and databse configration are done the broker can be started.
 First Step is to Connect, by this we establish a connection with the PLC. If not succesfull an error will be thrown in the logfile.
