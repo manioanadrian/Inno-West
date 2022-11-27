@@ -10,7 +10,6 @@ The main service contributed by the ROSE-AP is automated planning, to minimize t
 -   [Requirements](#requirements)
 -   [Install](#install)
 -   [Usage](#usage)
--   [API](#api)
 -   [License](#license)
 
 ## Background
@@ -39,7 +38,5 @@ The following are required in order to utilize the product:
 
 Details on the installation procedure are to be found under [Docker](/docker/) and [API](/api/)
 
-### API
-
 ## License
-The INNO WEST ROSE-AP components are licensed under [Apache 2.0](/LICENSE) © 2022 INNO ROBOTICS S.R.L.
+The Inno West Rose-AP components are licensed under [Apache 2.0](/LICENSE) © 2022 Inno Robotics S.R.L.
