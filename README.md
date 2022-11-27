@@ -9,7 +9,6 @@ The main service contributed by the ROSE-AP is automated planning, to minimize t
 -   [Architecture](#architecture)
 -   [Requirements](#requirements)
 -   [Install](#install)
--   [Usage](#usage)
 -   [License](#license)
 
 ## Background
