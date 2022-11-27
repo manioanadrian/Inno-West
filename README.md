@@ -8,7 +8,7 @@ The main service contributed by the ROSE-AP is automated planning, to minimize t
 -   [Background](#background)
 -   [Architecture](#architecture)
 -   [Requirements](#requirements)
--   [Install](#install)
+-   [Install](#instalation)
 -   [License](#license)
 
 ## Background
@@ -23,7 +23,7 @@ The main service contributed by the ROSE-AP is automated planning, to minimize t
 
 ## Architecture
 
-<img width="1000" alt="Architecture" src="docs/architecture.png">
+<img width="1000" alt="Architecture" src="docs/architecture.jpg">
 
 
 ## Requirements
@@ -33,7 +33,7 @@ The following are required in order to utilize the product:
 - Running instance of the API Inno Broker
 - Welding / Polish Robot cell
 
-## Installation
+## Instalation
 
 Details on the installation procedure are to be found under [Docker](/docker/) and [API](/api/)
 
