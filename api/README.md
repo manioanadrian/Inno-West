@@ -1,4 +1,4 @@
-# Inno Broker v2.2
+# Inno Broker v2.3
 This project is part of [DIH2](http://www.dih-squared.eu/). For more information check the RAMP Catalogue entry for the [components](https://github.com/xxx).
  ## Contents
 
