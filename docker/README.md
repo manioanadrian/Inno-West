@@ -44,12 +44,12 @@ To configure the CrateDB two tables need to be created to store the data from pr
 
 Querry to create Production table: 
 ```text
-create table inno.production (ref_id TEXT primary key, assy_line text, prt_cntr_good text, prt_cntr_bad text, mode_tme_auto text, mode_tme_man text, mode_tme_init text, mode_tme_chg text, mode_tme_stop text, dtime text);
+create table inno.production (ref_id TEXT primary key, assy_line text, prt_cntr_good int, prt_cntr_bad int, mode_tme_auto int, mode_tme_man int, mode_tme_init int, mode_tme_chg int, mode_tme_stop int, dtime timestamp);
 ```
 
 Querry to create Parts Table:
 ```text
-create table inno.parts (part_id TEXT primary key, ref_id text, prt_status text, weld_len text, weld_prog_tme text, weld_tot_tme text, plsh_len text, plsh_prog_tme text, plsh_tot_tme text, dtime text);
+create table inno.parts (part_id TEXT primary key, ref_id text, prt_status text, prt_cyc_tme INT, weld_len int, weld_tme int, plsh_len int, plsh_tme int, dtime timestamp);
 ```
 
 ## Usage
