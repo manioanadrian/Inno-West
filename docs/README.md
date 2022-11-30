@@ -39,7 +39,7 @@ To achive this some steps need to be reached:
 
 1. First and formemost the broker is built in mind with only the siemens PLCs and there needs to be a DB (datablock) number 26. 
 
-<img width="100" alt="settings" src="img/db_dih2_ex.png">
+<img width="150" alt="settings" src="img/db_dih2_ex.png">
 
 > The code for it be found here as ['DB_DIH2_EX.db'](/api/DB_DIH2_EX.db). 
 
