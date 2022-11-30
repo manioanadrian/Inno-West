@@ -16,7 +16,7 @@ In order to utilize the product [.net5](https://dotnet.microsoft.com/en-us/downl
 
 ## Configuration
 
-All configrations are done in the settings page of the broker.
+All api configrations are done in the settings page of the broker.
 
 <img width="200" alt="settings" src="img/settings.png">
 
@@ -27,7 +27,9 @@ All configrations are done in the settings page of the broker.
 5. Production Table: Is the table from the CrateDB where the production data will be stored.
 6. Part Table: Is the table from the CrateDB where the parts data will be stored.
 
-> Optional it can be added to run automaticaly at startup. 
+> Optional it can be added to run automaticaly at startup via the startup windows tool or the task scheduler by creating a new task with the api.
+> 1. Startup folder can be accessed via Run and type in *shell:startup*.
+> 2. Add the shortcut of the api here.
 
 ## Usage
 
@@ -61,7 +63,7 @@ To achive this some steps need to be reached:
 
 ## Testing
 
-Testing the data exchange between PLC-API-FIWARE can be done in the created interface of the apic or via the logfile if there are errors or something doens't seem to be working. <br>
+Testing the data exchange between PLC-API-FIWARE can be done in the created interface of the api or via the logfile if there are errors or something doens't seem to be working. <br>
 This data exchange is done in realtime (~500ms) and the data is refreshed at every cycle.
 
 ## License
