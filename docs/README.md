@@ -7,6 +7,7 @@ The main service contributed by the ROSE-AP is automated planning, to minimize t
 -   [Requirements](#requirements)
 -   [Configuration](#configuration)
 -   [Usage](#usage)
+-   [Testing](#testing)
 -   [License](#license)
 
 ## Requirements
@@ -32,10 +33,32 @@ All configrations are done in the settings page of the broker.
 
 <img width="500" alt="interface" src="img/interface.png">
 
-When all steps of the Broker and databse configration are done the broker can be started.
-First Step is to Connect, by this we establish a connection with the PLC. If not succesfull an error will be thrown in the logfile.
-From the PLC the following commands are definde in order to exchange the data: 0-Waiting Trigger; 1-Trigger WLine; 2-Trigger WPart; 100-WLine Error; 101-WPart Error Bussy-255
-The rest of the date that is sent from and to the PLC is displayed on the interface of the api in realtime.
+First step is to have the docker database configured as descried [here](/docker/README.md)
+Second of all is to program the PLC (programable logic controller) to exchange data with the broker. 
+To achive this some steps need to be reached:
+
+1. First and formemost the broker is built in mind with only the siemens PLCs and there needs to be a DB (datablock) number 26. 
+<img width="200" alt="settings" src="img/db_dih2_ex.png">
+*The code for it be found here as ['DB DIH2 EX.db'](/api/DB DIH2 EX.db).*
+
+2. The following structure needs to be built in
+<img width="200" alt="settings" src="img/db_dih2_ex_struct.png">
+*The code for it be found here as ['DB DIH2 EX.db'](/api/UDT DB DIH2 EX.udt).*
+
+3. To able to communicate with the PLC a protocol was put in place. The TRIG signal that is of type INT will be our exchange interface with predefined commands as follow: 
+*0   - Waiting Trigger; 
+*1   - Trigger to Write Production data; 
+*2   - Trigger to Write Part data; 
+*100 - Write Production Error; 
+*101 - Write Part Error;
+*255 - Bussy;
+
+4. After creating the logic and the DB in the PLC we can start our api. If the connection is not succesfull an error will be thrown in the logfile.
+
+## Configuration
+
+In order to test the data exchange between PLC-API-FIWARE this can be done in the create interface or the logfile. 
+This data exchange is done in realtime (~500ms) and the data is refreshed at every cycle.
 
 ## License
 The Inno West Rose-AP components are licensed under [Apache 2.0](/LICENSE) © 2022 Inno Robotics S.R.L.

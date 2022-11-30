@@ -1,0 +1,53 @@
+﻿TYPE "UDT DIH2 MODES"
+VERSION : 0.1
+   STRUCT
+      Auto : Int;   // Automatic Mode
+      Man : Int;   // Manual Mode
+      Init : Int;   // Initialization Mode
+      Change : Int;   // Changeover Mode
+      Stop : Int;   // Stop - Line offline
+   END_STRUCT;
+
+END_TYPE
+
+TYPE "UDT DIH2 STAT"
+VERSION : 0.1
+   STRUCT
+      GOOD : Int;   // Good Parts
+      BAD : Int;   // Bad Parts
+   END_STRUCT;
+
+END_TYPE
+
+TYPE "UDT DIH2 TYPE"
+VERSION : 0.1
+   STRUCT
+      LEN : Int;   // Lenght (mm)
+      "Time" : Int;   // Time (s)
+   END_STRUCT;
+
+END_TYPE
+
+TYPE "UDT DIH2 PART"
+VERSION : 0.1
+   STRUCT
+      "Serial Number" : String[20];   // Part Serial Number
+      Status : String[5];   // GOOD / BAD
+      "Cycle Time" : Int := 0;   // Part Cycle Time (s)
+      POLISH { S7_SetPoint := 'False'} : "UDT DIH2 TYPE";
+      WELD { S7_SetPoint := 'False'} : "UDT DIH2 TYPE";
+   END_STRUCT;
+
+END_TYPE
+
+TYPE "UDT DIH2 PROD"
+VERSION : 0.1
+   STRUCT
+      Reference : String[20];   // Reference Number
+      WeldLine : String[20];   // Welding Line number
+      "Counter" { S7_SetPoint := 'False'} : "UDT DIH2 STAT";   // Parts Counter
+      Mode_Time : "UDT DIH2 MODES";   // Modes Time duration
+   END_STRUCT;
+
+END_TYPE
+
