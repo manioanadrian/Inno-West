@@ -41,13 +41,13 @@ To achive this some steps need to be reached:
 
 <img width="200" alt="settings" src="img/db_dih2_ex.png">
 
-> The code for it be found here as ['DB DIH2 EX.db'](/api/DB DIH2 EX.db). 
+> The code for it be found here as ['DB_DIH2_EX.db'](/api/DB_DIH2_EX.db). 
 
 2. The following structure needs to be built in.
 
 <img width="200" alt="settings" src="img/db_dih2_ex_struct.png">
 
-> The code for it be found here as ['DB DIH2 EX.db'](/api/UDT DB DIH2 EX.udt).
+> The code for it be found here as ['UDT_DB_DIH2_EX.db'](/api/UDT_DB_DIH2_EX.udt).
 
 3. To able to communicate with the PLC a protocol was put in place. The TRIG signal that is of type INT will be our exchange interface with predefined commands as follow: <br>
 * 0   - Waiting Trigger; <br>
