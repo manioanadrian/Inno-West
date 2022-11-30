@@ -61,7 +61,7 @@ To achive this some steps need to be reached:
 
 ## Testing
 
-In order to test the data exchange between PLC-API-FIWARE this can be done in the create interface or the logfile. <br>
+Testing the data exchange between PLC-API-FIWARE can be done in the created interface of the apic or via the logfile if there are errors or something doens't seem to be working. <br>
 This data exchange is done in realtime (~500ms) and the data is refreshed at every cycle.
 
 ## License
