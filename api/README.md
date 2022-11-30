@@ -21,7 +21,8 @@ In order to achive this the broker was required to facilitate the exchange of da
 
 ## Requirements
 
-Broker requires Crate database, thus install the following [docker](/docker/) image and also [.net5](https://dotnet.microsoft.com/en-us/download/dotnet/5.0) framework or newer.
+Broker requires Crate database, thus install the following [docker](/docker/) image and also [.net5](https://dotnet.microsoft.com/en-us/download/dotnet/5.0) framework or newer.<br>
+Also it requires a preinstalled functional welding robot cell with a Siemens PLC.
 
 ## Installation
 

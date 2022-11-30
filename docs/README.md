@@ -13,6 +13,7 @@ The main service contributed by the ROSE-AP is automated planning, to minimize t
 ## Requirements
 
 In order to utilize the product [.net5](https://dotnet.microsoft.com/en-us/download/dotnet/5.0) framework or higher needs to be installed on the same machine with the docker.
+Also it requires a preinstalled functional welding robot cell with a Siemens PLC.
 
 ## Configuration
 
