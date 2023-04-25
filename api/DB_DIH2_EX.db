@@ -1,12 +1,26 @@
-﻿DATA_BLOCK "DB DIH2 EX"
-{ DB_Accessible_From_OPC_UA := 'FALSE' ;
- S7_Optimized_Access := 'FALSE' }
+﻿DATA_BLOCK "DB DIH2"
+{ S7_Optimized_Access := 'FALSE' }
 VERSION : 0.1
 NON_RETAIN
    STRUCT 
-      TRIG : Int;   // Trigger signal 0-Waiting Trigger; 1-Trigger WProd 2-Trigger WPart;100-Err Write Prod; 101-Err Write Proc Bussy-255
-      PROD { S7_SetPoint := 'False'} : "UDT DIH2 PROD";
-      PART { S7_SetPoint := 'False'} : "UDT DIH2 PART";
+      TRIG : Int;   // Trigger signal 0-Waiting Trigger; 1-Trigger WProd 2-Trigger WPart; 3-Trigger Upt WS Status; 100-Err Write Ws; 101-Err Write Unit; Bussy-255
+      Area : Struct
+         Workstation : Struct
+            "Name" : String[20];   // Workstation name
+            State : String[20];   // Workstation state
+            Attr_no_name : Array[1..10] of String[20];   // Attribute name to send for number format
+            Attr_no_value : Array[1..10] of Int;   // Attribute numbers format
+            Attr_txt_name : Array[1..5] of String[20];   // Attribute name to send for text format
+            Attr_txt_value : Array[1..5] of String[20];   // Attribute text format
+            Unit : Struct
+               "Name" : String[20];   // Unit Name
+               Attr_no_name : Array[1..10] of String[20];   // Attribute name to send for number format
+               Attr_no_value : Array[1..10] of Int;   // Attribute numbers format
+               Attr_txt_name : Array[1..5] of String[20];   // Attribute name to send for text format
+               Attr_txt_value : Array[1..5] of String[20];   // Attribute text format
+            END_STRUCT;
+         END_STRUCT;
+      END_STRUCT;
    END_STRUCT;
 
 
