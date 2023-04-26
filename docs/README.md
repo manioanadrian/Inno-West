@@ -19,7 +19,7 @@ Also it requires a preinstalled functional welding robot cell with a Siemens PLC
 
 All api configrations are done in the settings page of the broker.
 
-<img width="200" alt="settings" src="img/settings.png">
+<img width="400" alt="settings" src="img/settings.png">
 
 1. PLC Ip: is the IP of the programable controller which drives the robot cell and gathers the data.
 2. Server Ip: is the IP of the docker image with the Crate data base.
@@ -34,7 +34,7 @@ All api configrations are done in the settings page of the broker.
 
 ## Usage
 
-<img width="500" alt="interface" src="img/interface.png">
+<img width="800" alt="interface" src="img/interface.png">
 
 First step is to have the docker database configured as descried [here](/docker/README.md)
 Second of all is to program the PLC (programable logic controller) to exchange data with the broker. 
