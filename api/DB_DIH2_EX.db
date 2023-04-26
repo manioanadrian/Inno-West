@@ -1,4 +1,4 @@
-﻿DATA_BLOCK "DB DIH2"
+﻿DATA_BLOCK "DB_DIH2_EX"
 { S7_Optimized_Access := 'FALSE' }
 VERSION : 0.1
 NON_RETAIN
